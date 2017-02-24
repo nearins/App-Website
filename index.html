@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Productivity App</title>       
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link href='css/main.css' rel='stylesheet' type='text/css'>
+		<link href='css/lightbox.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Rokkitt:200,700" rel="stylesheet">		
+	</head>
+	<body data-spy="scroll" data-target="#navbar">
+		<div id="loader-wrapper">
+    		<div class="load">
+      		<hr/><hr/><hr/><hr/>
+    		</div>
+		</div>
+		<!--Navigation-->
+		<h2 id="home" class="hidden">Site navigation</h2>
+		<nav class="navbar navbar-toggleable-md fixed-top navbar-light bg-faded" id="navbar">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<span class="display-4">MyApp</span>
+			</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item t-menu">
+						<a class="nav-link turn-off" href="#home">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item about-menu">
+						<a class="nav-link turn-off" href="#about">About</a>
+					</li>
+					<li class="nav-item download-menu">
+						<a class="nav-link turn-off" href="#download">Download</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="email" placeholder="Email">
+					<input class="form-control mr-sm-2" type="email" placeholder="Password">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+				</form>
+			</div>
+		</nav>
+		<!--Header-->
+		<header class="jumbotron" id="jumbotron">
+			<div class="overlay-b"></div>
+			<h1 class="header-title display-1"></h1>
+			<p class="lead">
+				&lt;Your task manager!/&gt;
+			</p>
+			<hr class="my-4">
+			<p class="smaller-lead">
+				Want to know more? Join our mailling list!
+			</p>
+			<a class="btn btn-primary btn-lg" href="#" role="button">Sign up</a>
+		</header>
+		<!--Cards-->
+		<main class="container" id="about">
+			<div class="font-rhythm">
+				<h1 class="text-center">
+					Why this App is Awesome?
+				</h1>		
+				<p class="text-center">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				</p>
+			</div>
+			<div class="card-deck">
+				<div class="card">
+					<a href="img/big/city-big.jpg" data-lightbox="gallery"><img class="card-img-top" src="img/city.jpg" alt="Card image cap"></a>
+					<div class="card-block">
+						<h4 class="card-title"><i class="fa fa-bandcamp" aria-hidden="true"></i> Title 1 </h4>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+						<p class="card-text">
+							<small class="text-muted">
+								Last updated 3 mins ago
+							</small>
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<a href="img/big/kids-big.jpg" data-lightbox="gallery"><img class="card-img-top" src="img/kids.jpg" alt="Card image cap"></a>   
+					<div class="card-block">
+						<h4 class="card-title"><i class="fa fa-camera-retro" aria-hidden="true"></i> Title 2</h4>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<p class="card-text">
+							<small class="text-muted">
+								Last updated 3 mins ago
+							</small>
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<a href="img/big/night-big.jpg" data-lightbox="gallery"><img class="card-img-top" src="img/night.jpg" alt="Card image cap"></a>
+					<div class="card-block">
+						<h4 class="card-title"><i class="fa fa-bolt" aria-hidden="true"></i> Title 3</h4>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+						<p class="card-text">
+							<small class="text-muted">
+								Last updated 3 mins ago
+							</small>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="card-deck mt-4">
+				<div class="card">
+					<a href="img/big/freedom-big.jpg" data-lightbox="gallery"><img class="card-img-top" src="img/freedom.jpg" alt="Card image cap"></a>
+					<div class="card-block">
+						<h4 class="card-title"><i class="fa fa-female" aria-hidden="true"></i> Title 4</h4>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+						</p>
+						<p class="card-text">
+							<small class="text-muted">
+								Last updated 3 mins ago
+							</small>
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<a href="img/big/hand-big.jpg" data-lightbox="gallery"><img class="card-img-top" src="img/hand.jpg" alt="Card image cap"></a>
+					<div class="card-block">
+						<h4 class="card-title"><i class="fa fa-recycle" aria-hidden="true"></i> Title 5</h4>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+						<p class="card-text">
+							<small class="text-muted">
+								Last updated 3 mins ago
+							</small>
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<a href="img/big/mountains-big.jpg" data-lightbox="gallery"><img class="card-img-top" src="img/mountains.jpg" alt="Card image cap"></a>
+					<div class="card-block">
+						<h4 class="card-title"><i class="fa fa-map-signs" aria-hidden="true"></i> Title 6</h4>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+						</p>
+						<p class="card-text">
+							<small class="text-muted">
+								Last updated 3 mins ago
+							</small>
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!--Footer-->
+		<footer class="container-fluid footer-content" id="download">
+			<div class="text-center footer-text">
+				<h2>Download the App</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			</div>
+			<div class="icon-container">
+				<a href="#" class="download-icons"><img src="img/app-store.png"></a>
+				<a href="#" class="download-icons"><img src="img/google-play.png"></a>
+			</div>
+			<div class="overlay-b"></div>
+		</footer>
+		<div class="author">
+		<p>Designed and coded by <span class="bold">Adam Sowiński</span> 2017&#169;</p></div>
+		<!--Scripts-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> 
+		<script src="js/lightbox.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

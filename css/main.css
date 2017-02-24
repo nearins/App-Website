@@ -1,0 +1,215 @@
+body{
+	position: relative;
+}
+.js .load, .js #loader-wrapper {
+  display: block;
+}
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: #FFFFFF;  
+}
+.load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+ 
+.load hr {
+    border: 0;
+    margin: 0;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    border-radius: 50%;
+    animation: spin 2s ease infinite;
+}
+ 
+.load :first-child {
+    background: #19A68C;
+    animation-delay: -1.5s;
+}
+ 
+.load :nth-child(2) {
+    background: #F63D3A;
+    animation-delay: -1s;
+}
+ 
+.load :nth-child(3) {
+    background: #FDA543;
+    animation-delay: -0.5s;
+}
+ 
+.load :last-child {
+    background: #193B48;
+}
+ 
+@keyframes spin {
+    0%, 100% {
+        transform: translate(0)
+    }
+    25% {
+        transform: translate(160%)
+    }
+    50% {
+        transform: translate(160%, 160%)
+    }
+    75% {
+        transform: translate(0, 160%)
+    }
+}
+/*Disabled anchor events to fix scroll spy and smooth scroll double click issues*/
+a.turn-off{	
+	pointer-events: none;
+	cursor: default;
+}
+.navbar {
+	font-size: 1.4rem;
+}
+.nav-item{
+	cursor: pointer;
+}
+/*Header*/
+.jumbotron .btn-lg{
+	width: 250px;
+	position: relative;
+	z-index: 10;
+	border-color: #FFFFFF;
+	background-color: transparent;	
+}
+.jumbotron .btn-lg:hover{
+	background-color: white;	
+	color:#000000;
+	border-color: #FFFFFF;
+	opacity: 0.8;
+}
+.jumbotron{
+	background-image: url(../img/hero.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 400px;
+	background-size: cover;
+	text-align: center;
+	margin:0;
+	margin-top:56px;
+	position: relative;
+}
+.jumbotron .header-title{
+	position: relative;
+	z-index: 10;
+	color: #FFFFFF;
+}
+.jumbotron .lead{
+	position: relative;
+	z-index: 10;
+	color: #FFFFFF;
+	font-family: 'Rokkitt', serif;
+	font-size: 2rem;
+	font-weight: 200;	
+}
+.jumbotron .smaller-lead{
+	font-size: 1.4rem;
+	color: #FFFFFF;
+	font-family: 'Rokkitt', serif;
+	position: relative;
+	z-index: 10;
+}
+.jumbotron .my-4{
+	position: relative;
+	z-index: 10;
+	background-color:#FFFFFF;
+	opacity: 0.3;
+}
+/*About*/
+.font-rhythm{
+	margin:72px 0;
+}
+.card{
+	box-shadow: -1px 9px 19px -8px rgba(0, 0, 0,0.5);
+	margin-bottom:24px;
+}
+.card-deck.mt-4{
+	margin-bottom:72px;
+}
+.card-img-top{
+	width: 100%;
+	opacity:0.7;
+}
+.card-img-top:hover{
+	opacity:1;
+}
+.download-icons img{
+	width:200px;
+	margin:0 10px;
+	opacity: 0.7;	 
+}
+.download-icons img:hover{
+	opacity:1;
+}
+.icon-container{
+	margin:0 auto;
+	margin-bottom:36px;
+	padding:0 5px;
+	width:100%;
+	text-align: center;
+	z-index: 10;
+	position: relative;
+}
+/*Footer*/
+.footer-content{
+	background-color:#63799C;
+	padding:24px 0;	
+}
+footer .text-center{
+	margin:36px 0;
+	margin-top:72px;
+	color:#FFFFFF;
+	position: relative;
+	z-index: 10;	
+}
+.container-fluid.footer-content{
+	background-image: url(../img/2.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 400px;
+	background-size: cover;
+	opacity:0.8;	
+	position: relative;
+}
+.overlay-b{
+	background-color:rgb(34, 34, 34);
+	z-index: 9;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height:100%;
+	opacity: 0.7;
+}
+.author p{
+	margin:0;
+}
+.author{
+	text-align: center;
+	background-color:#3C3D41;
+	color:#FFFFFF;
+	margin:0;
+	padding:5px 0;
+}
+.bold{
+	font-weight: 800;
+}
+/*Media queries*/
+@media (max-width: 767px) { 
+	.header-title{
+		font-size:10vw;	
+	}
+}
