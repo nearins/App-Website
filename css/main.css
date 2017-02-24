@@ -21,8 +21,7 @@ body{
     width: 100px;
     height: 100px;
     display: none;
-}
- 
+} 
 .load hr {
     border: 0;
     margin: 0;
@@ -31,27 +30,22 @@ body{
     position: absolute;
     border-radius: 50%;
     animation: spin 2s ease infinite;
-}
- 
+} 
 .load :first-child {
     background: #19A68C;
     animation-delay: -1.5s;
-}
- 
+} 
 .load :nth-child(2) {
     background: #F63D3A;
     animation-delay: -1s;
-}
- 
+} 
 .load :nth-child(3) {
     background: #FDA543;
     animation-delay: -0.5s;
-}
- 
+} 
 .load :last-child {
     background: #193B48;
-}
- 
+} 
 @keyframes spin {
     0%, 100% {
         transform: translate(0)
@@ -90,6 +84,10 @@ a.turn-off{
 	color:#000000;
 	border-color: #FFFFFF;
 	opacity: 0.8;
+}
+.jumbotron .btn-lg:focus{	
+    box-shadow: none;
+    color:#FFFFFF;
 }
 .jumbotron{
 	background-image: url(../img/hero.jpg);
